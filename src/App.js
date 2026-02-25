@@ -5,8 +5,9 @@ import { getDatabase, ref, onValue } from "firebase/database";
 
 // 🔥 Replace with your config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.asia-southeast1.firebasedatabase.app"
+  apiKey: "AIzaSyD9CJvBTyfeWrlgV7Xk1tjt3Nvlp3ZkPO0",
+  
+databaseURL: "https://esp8266-led-control-1f5c7-default-rtdb.asia-southeast1.firebasedatabase.app"
 };
 
 const app = initializeApp(firebaseConfig);
