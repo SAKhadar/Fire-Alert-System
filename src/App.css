@@ -1,0 +1,113 @@
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ---------- LIGHTNING EFFECT ---------- */
+.fire-background {
+  animation: lightning 0.6s infinite alternate;
+}
+
+@keyframes lightning {
+  0% {
+    background: radial-gradient(circle at top, #1a0000, #000000);
+  }
+  100% {
+    background: radial-gradient(circle at top, #330000, #000000);
+  }
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* ---------- TITLE ---------- */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px red;
+}
+
+/* ---------- STATUS PANEL ---------- */
+.status-panel {
+  margin: 30px auto;
+  padding: 30px;
+  width: 300px;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.safe {
+  background: rgba(0, 255, 100, 0.15);
+  box-shadow: 0 0 20px #00ff88;
+  color: #00ff88;
+}
+
+.alert {
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 40px red;
+  color: #ff4c4c;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px red; }
+  50% { box-shadow: 0 0 50px red; }
+  100% { box-shadow: 0 0 10px red; }
+}
+
+/* ---------- GRID ---------- */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ---------- DATA CARDS ---------- */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px cyan;
+}
+
+.big-value {
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-shadow: 0 0 10px orange;
+}
+
+/* ---------- HISTORY ---------- */
+.history {
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
